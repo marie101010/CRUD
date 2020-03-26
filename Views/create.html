@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>CRUD</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../crud.css">
+</head>
+<body>
+    <header>
+        <!--Navbar-->
+    <div class ="navbar">
+        <div class="index"> <a href="../index.html"><h1>Mon CRUD</h1></a></div>
+        <div class="create"> <a href="create.html"><h2>Créer mon compte</h2></a></div>
+        <div class="read"> <a href="read.html">Mes infos</a></div>
+        <div class="update"> <a href="update.html">Modification</a></div>
+        <div class="delete"> <a href="delete.html">Disparaître</a></div>
+    </div>
+    </header> 
+
+    <!--Formulaire-->
+
+    <form action="../Controllers/create_crtl.php" method="POST">
+        <fieldset>
+            <legend><a><b>Création de son compte à l'Injustice League</b></a></legend>
+        <div>
+            <br/>
+            <!--Name-->
+            <label for="pseudo"><a>Identité secrète:</a></label>
+            <input type="text" name="pseudo" id="pseudo" placeholder="Pseudo">
+        </div>
+        <div>
+            <!--Password-->
+            <label for="mot_de_passe"><a>Mot de passe:</a></label>
+            <input type="password" id="mot_de_passe" name="mot_de_passe">
+        </div>
+        <div>
+            <!--Description-->
+            <label for="u_description"><a>Description:</a></label>
+            <input type="text" id="u_description" name="u_description" placeholder="Qui je suis, qui est mon ennemi juré, etc.">
+        </div>
+        </fieldset>
+            <!--Submit-->
+            <div class="bouton">
+            <button type="submit"> Créer mon compte </button></div>
+    </form>
+</body>
+</html>

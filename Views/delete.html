@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>CRUD</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../crud.css">
+</head>
+<body>
+    <header>
+        <!--Navbar-->
+        <div class ="navbar">
+            <div class="index"> <a href="../index.html"><h1>Mon CRUD</h1></a></div>
+            <div class="create"> <a href="create.html">Créer mon compte</a></div>
+            <div class="read"> <a href="read.html">Mes infos</a></div>
+            <div class="update"> <a href="update.html">Modification</a></div>
+            <div class="delete"> <a href="delete.html"><h2>Disparaître</h2></a></div>
+        </div>
+        </header> 
+
+    <!--Formulaire-->
+    
+        <form action="../Controllers/delete_ctrl.php"  method="POST">
+            <fieldset>
+            <legend><a>"Disparaître"</a></legend>
+        
+        <a><small>Cette action est définitive</small> </a>
+        <br/>
+        <br/>  
+            <!--Name-->
+        <div>
+            <label for="pseudo"><a>Identité secrète:</a></label>
+            <input type="text" name="pseudo" id="pseudo">
+        </div>
+        <div>
+            <!--Password-->
+            <label for="mot_de_passe"><a>Mot de passe:</a></label>
+            <input type="password" id="mot_de_passe" name="mot_de_passe">
+        </div>
+    </div>
+        </fieldset>
+        <!--Submit-->
+        <div class="bouton">
+            <button type="submit"> Snap </button>
+        </div>
+    </form>
+</body>
+</html>

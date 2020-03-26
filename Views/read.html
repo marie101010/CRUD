@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>CRUD</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../crud.css">
+</head>
+<body>
+    <header>
+        <!--Navbar-->
+        <div class ="navbar">
+            <div class="index"> <a href="../index.html"><h1>Mon CRUD</h1></a></div>
+            <div class="create"> <a href="create.html">Créer mon compte</a></div>
+            <div class="read"> <a href="read.html"><h2>Mes infos</h2></a></div>
+            <div class="update"> <a href="update.html">Modification</a></div>
+            <div class="delete"> <a href="delete.html">Disparaître</a></div>
+        </div>
+        </header>
+
+    <!--Formulaire-->
+
+        <form action="../Controllers/read_ctrl.php"  method="POST">
+        <fieldset>
+            <legend><a>Mes informations</a></legend>
+        <div>
+            <br/>
+            <!--Name-->
+            <label for="pseudo"><a>Pseudo:</a></label>
+            <input type="text" name="pseudo" id="pseudo">
+        </div>
+        </fieldset>
+        <!--Submit-->
+        <div class="bouton">
+            <button type="submit"> Ok </button>
+        </div>
+    </form>
+</body>
+</html>
